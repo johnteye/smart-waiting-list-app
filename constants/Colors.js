@@ -1,12 +1,11 @@
 const Colors = {
   light: "#eeee",
-  grey: "#D8D8D8",
-  primary: "#872E27",
-  // secondary: "#D02228",
+  grey: "#A3A3A3",
+  primary: "#0E75EF",
   link: "#F2DEBA",
-  secondary: "#000",
   dark: "#000",
   white: "#FFFF",
+  secondary: "#FC611E",
 };
 
 export default Colors;
