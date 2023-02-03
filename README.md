@@ -1,4 +1,5 @@
-# Smart waiting list app
+## Smart waiting list app
+- A mobile app that allows users to have quick and easy access to joining virtual queues, and getting alerts when their turn is approaching.
 
 
 
