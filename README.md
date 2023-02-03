@@ -8,7 +8,7 @@
 - Firebase
 - Firestore database
 - Tailwind CSS
-- Paystack react native webview
+- Nodejs
 
 ## Demo of app
 
