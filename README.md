@@ -1,6 +1,6 @@
-# srm-pay
+# Smart waiting list app
 
-A church app used to make offertory and tithe payment online using paystack payment gatewat
+
 
 ## Stack used 🚀
 
@@ -8,10 +8,13 @@ A church app used to make offertory and tithe payment online using paystack paym
 - Firebase
 - Firestore database
 - Tailwind CSS
-- Paystack react native webview
+- Nodejs
+
+## Figma link 💅
+https://www.figma.com/file/OrH71Gg4V5GxxisVhoS8DT/SmartWaiting-List?t=YIkte4bdZv61DlTM-1
 
 ## Demo of app
-https://user-images.githubusercontent.com/80902426/216637124-e31138b8-a167-4a14-bec3-3999ceff8104.mp4
+
 
 
 
