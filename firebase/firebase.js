@@ -4,6 +4,12 @@ import "firebase/firestore";
 // Web app's Firebase configuration
 const firebaseConfig = {
   // config keys goes here
+  apiKey: "AIzaSyCNkh6XnK6DVBjfJTd-JPfoPnWjWVkzk3s",
+  authDomain: "smart-waiting-list.firebaseapp.com",
+  projectId: "smart-waiting-list",
+  storageBucket: "smart-waiting-list.appspot.com",
+  messagingSenderId: "792790364644",
+  appId: "1:792790364644:web:47c780c1dff7e4598c97f1",
 };
 
 // Initialize Firebase
