@@ -1,12 +1,13 @@
 import { StyleSheet, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
-import tw from "twrnc";
+import Colors from "../constants/Colors";
+// import tw from "twrnc";
 
 import Onboarding from "react-native-onboarding-swiper";
 
 const Done = ({ ...props }) => (
   <TouchableOpacity {...props} style={{ marginHorizontal: 20 }}>
-    <Text style={{ fontSize: 16, fontWeight: "bold" }}>Done</Text>
+    <Text style={{ fontSize: 16, fontWeight: "bold", color: Colors.white }}>Done</Text>
   </TouchableOpacity>
 );
 
@@ -18,26 +19,27 @@ export default function OnBoarding({ navigation }) {
       onSkip={() => navigation.push("Login")}
       pages={[
         {
-          backgroundColor: "#fff",
+          backgroundColor: Colors.primary,
+          // fontSize: 10,
           image: (
             <Image
               source={require("../assets/images/people3.png")}
               style={{ width: 220, height: 245 }}
             />
           ),
-          title: "Create a free account",
-          subtitle: "New here, start by signing up",
+          title: "Welcome",
+          subtitle: "The smart waiting app that saves you time and the hassle. Join waitlist remotely and get notified when it’s your turn.",
         },
         {
-          backgroundColor: "#fff",
+          backgroundColor: Colors.primary,
           image: (
             <Image
               source={require("../assets/images/woman.webp")}
               style={{ width: 220, height: 245 }}
             />
           ),
-          title: "Calculate tithe in App",
-          subtitle: "Not sure about tithe?",
+          title: "How it Works",
+          subtitle: " Join the waitlist and receive a confirmation message Get real-time updates and notifications on your place in line.",
         },
         // {
         //   backgroundColor: "#fff",
