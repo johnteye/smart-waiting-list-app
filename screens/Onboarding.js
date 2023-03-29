@@ -16,7 +16,7 @@ export default function OnBoarding({ navigation }) {
     <Onboarding
       DoneButtonComponent={Done}
       onDone={() => navigation.push("GetStarted")}
-      onSkip={() => navigation.push("Login")}
+      onSkip={() => navigation.push("GetStarted")}
       pages={[
         {
           backgroundColor: Colors.primary,

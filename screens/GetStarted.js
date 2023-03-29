@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity, FlatList } from "react-native";
 import React from "react";
 import Colors from "../constants/Colors";
+import tw from "twrnc";
 
 export default function GetStarted({ navigation }) {
   return (
@@ -26,7 +27,7 @@ export default function GetStarted({ navigation }) {
           renderItem={({ item }) => {
             return (
               <View style={{ marginBottom: 10 }}>
-                <Text style={{ fontSize: 20 }}>{`\u2022 ${item.key}`}</Text>
+                <Text style={{ fontSize: 17, color: Colors.white }}>{`\u2022 ${item.key}`}</Text>
               </View>
             );
           }}
@@ -34,8 +35,13 @@ export default function GetStarted({ navigation }) {
         </View>
       </View>
       <View style={styles.buttonContainer}>
-        <TouchableOpacity onPress={() => {}} style={styles.button}>
-          <Text style={{ color: Colors.dark, fontSize: 16 }}>Get Started</Text>
+      <TouchableOpacity
+          style={[styles.signup, tw`flex justify-center items-center`]}
+          onPress={() => navigation.push("Login")}
+        >
+          <Text style={tw`text-[#0E75EF] font-bold text-xl`}>
+            Get Started
+          </Text>
         </TouchableOpacity>
       </View>
       </View>
@@ -52,13 +58,12 @@ const styles = StyleSheet.create({
   },
   main: {
     marginHorizontal: 15,
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
+    // flex: 1,
+    // alignItems: "center",
+    // justifyContent: "center",
   },
   imageContainer: {
     marginTop: 55,
-    flex: 1,
     alignItems: "center",
     justifyContent: "center",
   },
@@ -70,24 +75,25 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-  },
-  items: {
-    marginTop: 10,
-    alignItems: "flex-start",
-    justifyContent: "center",
-    marginVertical: 15,
+    marginTop: 20,
   },
   buttonContainer: {
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
   },
-  button: {
+  signup: {
+    width: "100%",
+    height: 55,
+    borderColor: Colors.white,
+    borderWidth: 1,
+    borderRightWidth: 1,
+    borderLeftWidth: 1,
+    borderTopWidth: 1,
+    marginTop: 12,
+    borderRadius: 25,
+    paddingHorizontal: 10,
+    fontSize: 17,
     backgroundColor: Colors.white,
-    width: 200,
-    height: 50,
-    borderRadius: 10,
-    alignItems: "center",
-    justifyContent: "center",
   },
 });
