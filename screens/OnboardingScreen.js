@@ -2,6 +2,8 @@ import { StyleSheet, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
 import Colors from "../constants/Colors";
 // import tw from "twrnc";
+// import AsyncStorage from '@react-native-async-storage/async-storage';
+
 
 import Onboarding from "react-native-onboarding-swiper";
 
@@ -11,7 +13,7 @@ const Done = ({ ...props }) => (
   </TouchableOpacity>
 );
 
-export default function OnBoarding({ navigation }) {
+export default function OnboardingScreen({ navigation }) {
   return (
     <Onboarding
       DoneButtonComponent={Done}

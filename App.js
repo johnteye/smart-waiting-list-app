@@ -1,6 +1,8 @@
 import { store } from "./store/store";
 import { Provider } from "react-redux";
 import Navigation from "./navigations/Navigation";
+// import AsyncStorage from '@react-native-async-storage/async-storage';
+
 
 import { LogBox } from "react-native";
 

@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 // import Home from "../screens/Home";
-import Onboarding from "../screens/Onboarding";
+import OnboardingScreen from "../screens/OnboardingScreen";
 import GetStarted from "../screens/GetStarted";
 import Login from "../screens/Login";
 import Signup from "../screens/Signup";
@@ -13,8 +13,8 @@ export const InitialScreenOnStart = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="Onboarding"
-        component={Onboarding}
+        name="OnboardingScreen"
+        component={OnboardingScreen}
         options={{
           headerShown: false,
         }}
