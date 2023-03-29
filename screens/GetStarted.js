@@ -58,9 +58,6 @@ const styles = StyleSheet.create({
   },
   main: {
     marginHorizontal: 15,
-    // flex: 1,
-    // alignItems: "center",
-    // justifyContent: "center",
   },
   imageContainer: {
     marginTop: 55,
