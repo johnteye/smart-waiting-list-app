@@ -1,56 +1,30 @@
 {
   "expo": {
-    "name": "smart-waiting-list",
-    "slug": "smart-waiting-list",
+    "name": "waiting-list",
+    "slug": "waiting-list",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/profile.png",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/images/profile.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffff"
+      "backgroundColor": "#ffffff"
     },
-    "plugins": [
-      [
-        "expo-notifications",
-        {
-          "icon": "./assets/images/profile.png",
-          "color": "#ffffff",
-          "sounds": [
-            "./assets/sounds/notification-sound.wav",
-            "./assets/sounds/notification-sound-other.wav"
-          ]
-        }
-      ],
-      [
-        "expo-notifications",
-        {
-          "icon": "./assets/images/profile.png",
-          "color": "#ffffff",
-          "sounds": [
-            "./assets/sounds/notification-sound.wav",
-            "./assets/sounds/notification-sound-other.wav"
-          ]
-        }
-      ]
+    "assetBundlePatterns": [
+      "**/*"
     ],
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/profile.png",
-        "backgroundColor": "#ffff"
-      },
-      "package": "com.sonny067.srmpay"
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
     },
     "web": {
-      "favicon": "./assets/images/profile.png"
+      "favicon": "./assets/favicon.png"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "smart-waiting-app",
+  "name": "waiting-list",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
@@ -9,41 +9,27 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "@pietile-native-kit/page-slider": "^1.2.0",
-    "@react-native-async-storage/async-storage": "1.17.11",
-    "@react-navigation/bottom-tabs": "^6.4.1",
-    "@react-navigation/native": "^6.0.14",
-    "@react-navigation/native-stack": "^6.9.2",
-    "color": "^4.2.3",
-    "expo": "^48.0.9",
-    "expo-checkbox": "~2.3.1",
-    "expo-device": "~5.2.1",
-    "expo-image-picker": "~14.1.1",
-    "expo-location": "~15.1.1",
-    "expo-notifications": "~0.18.1",
-    "expo-radio-button": "^1.0.8",
+    "@react-navigation/native": "^6.1.6",
+    "@react-navigation/native-stack": "^6.9.12",
+    "expo": "~48.0.9",
+    "expo-checkbox": "^2.3.1",
     "expo-status-bar": "~1.4.4",
-    "firebase": "^8.2.3",
-    "metro-core": "^0.76.0",
+    "firebase": "^9.18.0",
     "react": "18.2.0",
     "react-native": "0.71.4",
-    "react-native-gesture-handler": "~2.9.0",
-    "react-native-maps": "^1.3.2",
+    "react-native-gesture-handler": "^2.9.0",
     "react-native-onboarding-swiper": "^1.2.0",
-    "react-native-paystack-webview": "^4.0.3",
     "react-native-safe-area-context": "4.5.0",
     "react-native-screens": "~3.20.0",
-    "react-native-webview": "11.26.0",
     "react-redux": "^8.0.5",
-    "redux": "^4.2.0",
+    "redux": "^4.2.1",
     "redux-thunk": "^2.4.2",
-    "twrnc": "^3.6.0"
+    "twrnc": "^3.6.0",
+    "expo-image-picker": "~14.1.1",
+    "expo-location": "~15.1.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9",
-    "@redux-devtools/core": "^3.13.1",
-    "metro-react-native-babel-preset": "^0.73.4",
-    "react-native-dotenv": "^3.4.6"
+    "@babel/core": "^7.20.0"
   },
   "private": true
 }

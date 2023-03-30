@@ -1,20 +1,20 @@
-import { store } from "./store/store";
-import { Provider } from "react-redux";
-import Navigation from "./navigations/Navigation";
-// import AsyncStorage from '@react-native-async-storage/async-storage';
-
-
-import { LogBox } from "react-native";
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
-  // Async Storage warning code
-  LogBox.ignoreLogs([
-    "AsyncStorage has been extracted from react-native core and will be removed in a future release. It can now be installed and imported from '@react-native-async-storage/async-storage' instead of 'react-native'. See https://github.com/react-native-async-storage/async-storage",
-  ]);
-
   return (
-    <Provider store={store}>
-      <Navigation></Navigation>
-    </Provider>
+    <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
+      <StatusBar style="auto" />
+    </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
